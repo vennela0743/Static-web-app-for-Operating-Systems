@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Management</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <h1>Memory Management</h1>
+    </nav>
+
+    <div>
+        <form name = "block_no">
+            <div class = "form-group" style="margin-left:50px; float:left;">
+            <label>Number of blocks:</label><input id="block_no" class="form-control" type="Number" onkeyup="BuildFormFields(parseInt(this.value, 10));" />
+            <div id="FormFields"></div>
+            </div>
+        </form>
+        <form name = "process_no">
+            <div class = "form-group" style="margin-left:50px;float:left;">
+            <label>Number of Processes:</label> <input class="form-control" type="Number" onkeyup="BuildFormFields2(y = parseInt(this.value, 10));" />
+            <div id="FormFields1"></div>
+            </div>
+        </form>
+   
+    </div>
+  
+
+        <div class="fit_calc">
+            <button class="btn btn-primary btn-success" onClick="firstFit()">Calculate First Fit</button>
+            <button class="btn btn-primary btn-success" onClick="bestFit()">Calculate Best Fit</button>
+            <button class="btn btn-primary btn-success" onClick="worstFit()">Calculate Worst Fit</button>
+        </div>
+
+         <div class="resultant-table">
+            <table class="table table-bordered" id="tblResults">
+                <thead>
+                    <tr>
+                        <th class="col">Process No</th>
+                        <th class="col">Process Size</th>
+                        <th class="col">Block No</th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                </tbody>
+            </table>
+        </div>
+
+    <!-- </div>   -->
+
+
+    <script src="memoryMana.js"></script>
+</body>
+</html>
