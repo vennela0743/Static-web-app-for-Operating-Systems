@@ -1,0 +1,31 @@
+
+<html>
+    <head>
+        <title>rm</title>
+    </head>
+    <body>
+        <h2>
+            On Unix-like operating systems, the rm command removes (deletes) files.
+            rm removes each file specified on the command line. By default, it does not remove directories.
+            When rm is executed with the -r or -R options, it recursively deletes any matching directories, their subdirectories, 
+            and all files they contain. See removing directories below for details.
+            The removal process unlinks a file name in a filesystem from its associated data, 
+            and marks that space on the storage device as usable by future writes. In other words, when you remove a file,
+             the data in the file isn't changed, but it's no longer associated with a file name.
+            The data itself is not destroyed, but after being unlinked with rm, 
+            it becomes inaccessible. Remove your files wisely! 
+            It's not like putting something in the Windows Recycle Bin; 
+            once you rm a file or directory, there is no way to undo it.
+             <ol>  
+                Syntax:<br>
+                rm [-f | --force] {[-i | --interactive[=always]] | [-I | --interactive=once] |
+                 [--interactive=never]} [--one-file-system] [--no-preserve-root |
+                 --preserve-root] [-r | -R | --recursive] [-d | --dir] [-v | --verbose] 
+                FILE...
+            </ol>
+        </h2>
+        <h1>Online Compiler</h1>
+        <iframe width="1400" height="400" src="https://www.jdoodle.com/test-bash-shell-script-online/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </body>
+    <html>
+  
